@@ -442,7 +442,7 @@ $img = if (-not $noimage) {
         if ($logo -eq "Windows 11") {
             $COLUMNS = 32
             @(
-                "${e}[${t};34mlllllllllllllll   lllllllllllllll"
+                " 
                 "${e}[${t};34mlllllllllllllll   lllllllllllllll"
                 "${e}[${t};34mlllllllllllllll   lllllllllllllll"
                 "${e}[${t};34mlllllllllllllll   lllllllllllllll"
@@ -511,6 +511,37 @@ $img = if (-not $noimage) {
                 "${e}[${t};34m│     │${e}[33m│     │"
                 "${e}[${t};34m│     │${e}[33m│     │"
                 "${e}[${t};34m└─────┘${e}[33m└─────┘"
+                 )
+        } elseif ($logo -eq "VS") {
+            $COLUMNS = 
+            @(
+                "${e}[${t};34m                                  XOdloxOKXNMMMMMM"      
+                "${e}[${t};34m                               KkolccldxxxkO0XNWMM"  
+                "${e}[${t};34m                             KxlcccccldddxxddxxO0X"
+                "${e}[${t};34m                          N0dlccccccclodddxddddddx"
+                "${e}[${t};34m                       NOkdlccccccccccoddddddddddd"
+                "${e}[${t};34mMM XXN               Xkocccccccccccc:coddddddddddd"
+                "${e}[${t};34mNKkoodkKN          Kklccccc:cccccccclddddddddddddd"
+                "${e}[${t};34mxllllllldOX      Kxlc::c:::::c::ccokKXkddddddddddd"
+                "${e}[${t};34mdlllcclcclox0NN0dc::::::::::::clx0N  Nkddddddddddd"
+                "${e}[${t};34mNOdlcccccccclooc::::::::::::ldOX     Nkddddddddddd"
+                "${e}[${t};34m N0xlccccccccccc:::::::ccokKW        Nkddddddddddd"
+                "${e}[${t};34m    NKxlccccccccccc:::cx0XN          Nkooddddddddd"
+                "${e}[${t};34m     NOl:cccccccccccccdK             Xkooooooooooo"
+                "${e}[${t};34m   N0dc;;;::cccccccccccldkOX         Xkooooooooooo"
+                "${e}[${t};34m NOo:;;;;;;;::ccccccccccc:cox0N      Xkooooooooooo"
+                "${e}[${t};34mkl:;;;;;;;;:lkOdcc::c::c::::ccokK    Xkooooooooooo"
+                "${e}[${t};34m:;;;;;;;:lx0N  N0dl:::::::::::::ldOX Xkooooooooooo"
+                "${e}[${t};34mOo:;;;coOX        Kxl:::::::::::::clxkdooooooooooo"
+                "${e}[${t};34mMN0xdkK             Xkl::::::::::::::clooooooooooo"
+                "${e}[${t};34m                     WXkoc::::::::::;:looooooooooo"
+                "${e}[${t};34m                        NKOoc:::::::;:looooooooooo"
+                "${e}[${t};34m                           N0dc::::;;:lllllolllodk"
+                "${e}[${t};34m                              W0xc::;;:cllllodxOKX" 
+                "${e}[${t};34m                                Kxc:;:lodxOKNWMMMM"   
+                "${e}[${t};34m                                  W0ocldOXWMMMMMMM"      
+                
+                
             )
         } elseif ($logo -eq "Windows 2000" -Or $logo -eq "Windows 98" -Or $logo -eq "Windows 95") {
             $COLUMNS = 45
